@@ -1,3 +1,11 @@
+Nums=500;
+x=40*(rand(2,Nums)-0.5);
+y=0.8*x(1,:)+0.5*x(2,:)+normrnd(0,3,1,Nums);
+X=zeros(3,Nums);
+X(1:2,:)=x;
+X(3,:)=y;
+plot3(X(1,:),X(2,:),X(3,:),'ro')
+
 d1 = 2;
 A1 = mean(X(1,:));
 A2 = mean(X(2,:));
